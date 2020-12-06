@@ -1,0 +1,24 @@
+/* History page styling */
+section p {
+  width: 65%;
+}
+.historyItem{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+/* History - LAPTOP RESPONSIVE */
+@media only screen and (max-width: 1366px){
+section p {
+  width: 100%;
+}
+}
+/* History - MOBILE RESPONSIVE */
+@media only screen and (max-width: 768px){
+.historyItem{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+}

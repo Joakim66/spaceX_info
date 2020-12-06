@@ -1,0 +1,81 @@
+/* Rockets and dragons pages styling */
+.spacecraft{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.spacecraft:first-of-type{
+  padding-top: 240px;
+}
+.spacecraft:nth-child(even){
+  flex-direction: row-reverse;
+}
+.spacecraftImages img{
+  width: 320px;
+  height: 210px;
+  padding: 2px;
+}
+.spacecraftImages{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.spacecraft:nth-of-type(even) .spacecraftImages{
+  justify-content: flex-end;
+}
+.spacecraftContent{
+  width: 40%;
+}
+/* Background */
+.backgroundBottom::after {
+  margin-top: -1453px;
+}
+/* Rockets and dragons - LAPTOP RESPONSIVE */
+@media only screen and (max-width: 1366px){
+.spacecraftContent{
+  width: 70%;
+}
+}
+/* Rockets and dragons - TABLET RESPONSIVE */
+@media only screen and (max-width: 1024px){
+.spacecraftContent{
+  width: 60%;
+}
+}
+/* Rockets and dragons - MOBILE RESPONSIVE */
+@media only screen and (max-width: 768px){
+.spacecraft{
+  flex-direction: column-reverse;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.spacecraft:first-of-type{
+  padding-top: 100px;
+}
+.spacecraft:nth-child(even){
+  flex-direction: column-reverse;
+}
+.spacecraft:nth-of-type(even) .spacecraftImages{
+  justify-content: center;
+}
+.spacecraftImages{
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+.spacecraftContent{
+  width: 100%;
+}
+}
+/* Rockets and dragons - SMALL MOBILE RESPONSIVE */
+@media only screen and (max-width: 460px){
+.spacecraftImages img{
+  width: 100%;
+  height: 190px;
+}
+}

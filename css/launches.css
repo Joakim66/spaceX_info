@@ -1,0 +1,123 @@
+/* Launch page styling */
+.launchItem::before{
+  content: "";
+  background: #ffffff;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: 49.4%;
+}
+.launchItem:first-of-type::before{
+  top: 50%;
+}
+.launchItem:last-of-type::before{
+  height: 40%;
+}
+.launchItem:nth-child(even){
+  flex-direction: row-reverse;
+}
+.launchItem:nth-of-type(even) time{
+  justify-content: flex-start;
+}
+.launchItem{
+  position: relative;
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: space-between;
+  z-index: 1;
+}
+.launchItem img{
+  width: 134px;
+  height: 134px;
+  z-index: 1;
+}
+.launchImageCenterizer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.launchImageCenterizer::before{
+  content: "";
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  border: 8px solid #ffffff;
+  position: absolute;
+  z-index: 2;
+}
+.launchImageCenterizer::after{
+  content: "";
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background: #000000;
+  position: absolute;
+}
+.launchItem time{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.launchItemContent{
+  width: 40%;
+}
+.backgroundBottom::after {
+  margin-top: -1500px;
+}
+/* Launch page - LAPTOP RESPONSIVE */
+@media only screen and (max-width: 1366px){
+.launchItem img{
+  width: 104px;
+  height: 104px;
+}
+.launchImageCenterizer::before{
+  width: 150px;
+  height: 150px;
+}
+.launchImageCenterizer::after{
+  width: 150px;
+  height: 150px;
+}
+}
+/* Launch page - TABLET RESPONSIVE */
+@media only screen and (max-width: 1024px){
+.launchItem img{
+  width: 74px;
+  height: 74px;
+}
+.launchImageCenterizer::before{
+  width: 110px;
+  height: 110px;
+}
+.launchImageCenterizer::after{
+  width: 110px;
+  height: 110px;
+}
+} 
+/* Launch page - MOBILE RESPONSIVE */
+@media only screen and (max-width: 768px){
+.launchItem{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.launchItem, .launchItem time{
+  display: block;
+}
+.launchItem img{
+  position: relative;
+  right: -18px;
+}
+.launchItem::before{
+  content: none;
+}
+.launchImageCenterizer {
+  justify-content: flex-start;
+  padding-top: 34px;
+  padding-bottom: 30px;
+}
+.launchItemContent {
+  width: 100%;
+}
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Launches | SpaceX.info</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="SpaceX launch timeline infographic."/>
+    <meta name="keywords" content="spacex,space,spacecraft,exploration,technology,launches,rockets,dragons,history,contact,api" />
+    <meta name="author" content="Joakim Solbak" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/launches.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="main-nav">
+      <div class="container">
+        <a class="nav-logo" href="index.html" title="Go to home page.">
+          <img src="assets/svg/logo_white.svg" alt="The SpaceX.info logo, this is also a shortcut to the home page.">
+        </a>
+<!-- mobile hamburger menu navigation -->
+        <div class="mobile-main-nav">
+          <label for="hamburger-menu"><img src="assets/svg/hamburger_menu.svg" alt="Navigation menu."></label>
+          <input type="checkbox" id="hamburger-menu">
+          <nav>
+            <ul>
+              <li><a class="current-page" aria-current="page" href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+              <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+              <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+              <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+              <li><a href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+              <li><a href="https://github.com/r-spacex/SpaceX-API" title="View the API used to build our infographics.">API</a></li>
+              <li><a href="https://www.spacex.com/" title="Go to the main SpaceX website.">MAIN WEBSITE</a></li>
+            </ul>
+          </nav>
+        </div>
+<!-- desktop/larger devices navigation -->
+        <div class="default-main-nav">
+          <nav>
+            <ul>
+              <li><a class="current-page" aria-current="page" href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+              <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+              <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+              <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+              <li><a href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+<!-- Main content -->
+    <main role="main">
+      <header id="banner-section">
+        <div class="container">
+          <h1>
+            Launches
+          </h1>
+          <p>
+            A complete timeline of SpaceX mission launches. <br>
+            Data collected from the <span><a href="https://github.com/r-spacex/SpaceX-API">SpaceX REST API.</a></span>
+          </p>
+        </div>
+      </header>
+      <section id="info-section">
+        <a href="#main-nav" class="scrollBtn" title="Scroll to the top of the page">Top</a>
+        <div class="container launches-info">
+          <div class="loadingContent">
+            <img src="assets/svg/loading.svg" alt="">
+            <p>Loading content...</p>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <a class="nav-logo" href="index.html" title="Go to home page.">
+          <img src="assets/svg/logo_white.svg" alt="The SpaceX.info logo, this is also a shortcut to the home page.">
+        </a>
+        <nav>
+          <ul>
+            <li><a class="current-page" aria-current="page" href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+            <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+            <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+            <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+            <li><a href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+            <li><a href="https://github.com/r-spacex/SpaceX-API" title="View the API used to build our infographics.">API</a></li>
+            <li><a href="https://www.spacex.com/" title="Go to the main SpaceX website.">MAIN WEBSITE</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <small>SPACEX © 2020</small>
+      </div>
+<!-- Javascript -->
+      <script src="js/getLaunches.js"></script>
+      <script src="js/scrollToTop.js"></script>
+    </footer>
+  </body>
+</html>

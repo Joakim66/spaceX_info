@@ -1,0 +1,70 @@
+/* Index styling */
+section{
+  height: 985px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+section .container div{
+  width: 31%;
+}
+section h2{
+  text-shadow: 2px 2px 5px #2c2c2c;
+}
+section p{
+  text-shadow: 2px 2px 5px #2c2c2c;
+}
+/* Banner styling */
+#banner-section h1 img{
+  width: 300px
+}
+/* Launch styling */
+#launches-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/launches.jpg);
+}
+.launches-div{
+  float: right;
+}
+/* Rockets styling */
+#rockets-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/rockets.jpg);
+}
+.rockets-div{
+  float: left;
+}
+/* Dragons styling */
+#dragons-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/dragons.jpg);
+}
+.dragons-div{
+  float: right;
+}
+/* History styling */
+#history-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/history.jpg);
+}
+.history-div{
+  float: left;
+}
+/* Index page - LAPTOP RESPONSIVE */
+@media only screen and (max-width: 1366px){
+section{
+  height: 555px;
+}
+}
+/* Index page - TABLET RESPONSIVE */
+@media only screen and (max-width: 1024px){
+section .container div{
+  width: 100%;
+}
+} 
+/* Index page - MOBILE RESPONSIVE */
+@media only screen and (max-width: 768px){
+#banner-section h1 img {
+  width: 250px;
+}
+#launches-section, #rockets-section, #dragons-section, #history-section{
+  background-position: center;
+}
+}

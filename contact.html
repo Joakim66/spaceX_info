@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact | SpaceX.info</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Contact SpaceX.info."/>
+    <meta name="keywords" content="spacex,space,spacecraft,exploration,technology,launches,rockets,dragons,history,contact,api" />
+    <meta name="author" content="Joakim Solbak" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="main-nav">
+      <div class="container">
+        <a class="nav-logo" href="index.html" title="Go to home page.">
+          <img src="assets/svg/logo_white.svg" alt="The SpaceX.info logo, this is also a shortcut to the home page.">
+        </a>
+<!-- mobile hamburger menu navigation -->
+        <div class="mobile-main-nav">
+          <label for="hamburger-menu"><img src="assets/svg/hamburger_menu.svg" alt="Navigation menu."></label>
+          <input type="checkbox" id="hamburger-menu">
+          <nav>
+            <ul>
+              <li><a href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+              <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+              <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+              <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+              <li><a class="current-page" aria-current="page" href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+              <li><a href="https://github.com/r-spacex/SpaceX-API" title="View the API used to build our infographics.">API</a></li>
+              <li><a href="https://www.spacex.com/" title="Go to the main SpaceX website.">MAIN WEBSITE</a></li>
+            </ul>
+          </nav>
+        </div>
+<!-- desktop/larger devices navigation -->
+        <div class="default-main-nav">
+          <nav>
+            <ul>
+              <li><a href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+              <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+              <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+              <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+              <li><a class="current-page" aria-current="page" href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+<!-- Main content -->
+    <main role="main">
+      <header id="banner-section">
+        <div class="container">
+          <h1>
+            Contact
+          </h1>
+          <p>
+            Contact us by using the form below and we'll get back to you in three business days.
+            We want to know if you have any feedback, requests about new features or concerns about potential errors.
+          </p>
+        </div>
+      </header>
+      <section id="info-section">
+        <div class="container">
+          <form id="contactForm">
+            <section class="formSection">
+              <div>
+                <label for="firstName">First name*</label>
+                <input type="text" id="firstName" name="firstName"/>
+              </div>
+              <div>
+                <label for="firstName">Last name*</label>
+                <input type="text" id="lastName" name="lastName"/>
+              </div>
+              <div id="nameError" class="error">First name and last name is required.</div>
+            </section>
+            <section class="formSection">
+              <div>
+                <label for="subject">Subject*</label>
+                <input type="text" id="subject" name="subject"/>
+                <div id="subjectError" class="error">Your message must have a subject title.</div>
+              </div>
+              <label for="messageArea">Message*</label>
+              <textarea id="messageArea" name="messageArea" rows="15" maxlength="900"></textarea>
+              <div id="messageError" class="error">Your message must contain a minimum of 10 characters.</div>
+            </section>
+            <section class="formSection">
+              <div>
+                <label for="email">Email*</label>
+                <input id="email" name="email"/>
+                <div id="emailError" class="error">Valid email address is required.</div>
+              </div>
+            </section>
+            <section>
+              <p class="validationMsg">* = Required</p>
+            </section>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <a class="nav-logo" href="index.html" title="Go to home page.">
+          <img src="assets/svg/logo_white.svg" alt="The SpaceX.info logo, this is also a shortcut to the home page.">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="launches.html" title="Learn about SpaceX launches.">LAUNCHES</a></li>
+            <li><a href="rockets.html" title="Learn about SpaceX rockets.">ROCKETS</a></li>
+            <li><a href="dragons.html" title="Learn about the multiple versions of the SpaceX Dragon spacecraft.">DRAGONS</a></li>
+            <li><a href="history.html" title="Learn about SpaceX's historical events.">HISTORY</a></li>
+            <li><a class="current-page" aria-current="page" href="contact.html" title="Contact the creators of SpaceX.info.">CONTACT</a></li>
+            <li><a href="https://github.com/r-spacex/SpaceX-API" title="View the API used to build our infographics.">API</a></li>
+            <li><a href="https://www.spacex.com/" title="Go to the main SpaceX website.">MAIN WEBSITE</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <small>SPACEX © 2020</small>
+      </div>
+<!-- Javascript -->
+      <script src="js/contact.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* Contact page styling */
+#banner-section p{
+  width: 500px;
+}
+.error {
+  color: red;
+  display: none;
+  margin-top: 3px;
+}
+form{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+form div{
+  width: 100%
+}
+form section{
+  margin-bottom: 30px;
+  width: 100%
+}
+form label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form input{
+  padding: 8px 12px;
+  width: 25%;
+  box-sizing: border-box;
+}
+form textarea{
+  width: 50%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+form button{
+  padding: 8px 20px;
+  font-family: "d-din-regular", sans-serif;
+  font-size: 16px;
+}
+.validationMsg{
+  width: 25%;
+  box-sizing: border-box;
+}
+/* Contact - TABLET RESPONSIVE */
+@media only screen and (max-width: 1024px){
+#banner-section p{
+  width: 100%;
+}
+form{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+form input{
+  width: 100%;
+}
+form textarea{
+  width: 100%;
+}
+form button{
+  width: 100%;
+  padding: 10px;
+}
+.validationMsg{
+  width: 100%;
+}
+}
